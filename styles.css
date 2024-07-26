@@ -270,30 +270,130 @@ body {
   margin-bottom: 5rem;
 }
 
-.run .run_content h2{
+.run .run_content h2 {
   font-size: var(--h1);
   margin: 0;
 }
 
-.run .run_content p{
+.run .run_content p {
   font-size: var(--h6);
   color: rgba(255, 255, 255, 0.6);
   line-height: 2.2rem;
   margin-top: 3.5rem;
 }
 
-.run .run_content .btn{
+.run .run_content .btn {
   margin-top: 4rem;
   padding: 1.2rem 4.5rem;
 }
 
-.run .run_img{
+.run .run_img {
   width: 48rem;
 }
 
-.run .run_img img{
+.run .run_img img {
   width: 100%;
   border-radius: 1rem;
 }
 
+/* section bmi */
+.bmi {
+  margin: 0 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.bmi_content h2{
+  font-size: var(--h1);
+}
+
+.bmi_content p{
+  font-size: var(--h5);
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 2rem;
+}
+
+
+/* bmi cal */
+
+.bmi_calculator{
+  padding: 5rem 10rem;
+  background-color: rgb(51, 51, 51);
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 20rem;
+  margin-bottom: 5rem;
+}
+
+.bmi_chart table{
+  border-collapse: collapse;
+  border: 2px solid rgba(255, 255, 255,0.1);
+  font-size: var(--h4);
+}
+
+table caption{
+  font-size: var(--h2);
+  padding-bottom: 5rem;
+}
+
+table td{
+  border: 2px solid rgba(255, 255, 255,0.1);
+  padding: 1rem 2rem;
+}
+
+table tbody td{
+  font-size: var(--h5);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.check_bmi_content h3{
+  font-size: var(--h2);
+  margin: 0;
+}
+
+.check_bmi_content p{
+  font-size: var(--h6);
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 2rem;
+}
+
+.check_bmi_inputs .input_row_one,
+.check_bmi_inputs .input_row_two{
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.input_row_one input:first-child,
+.input_row_two input:first-child{
+  margin-right: 1rem;
+}
+
+.check_bmi_inputs input,select{
+  width: 50%;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: rgb(78, 78, 78);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: var(--h5);
+}
+
+input::placeholder{
+  font-size: var(--h5);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.check_bmi_inputs > select{
+  width: 100%;
+  /* margin-bottom: 4rem; */
+}
+
+.bmi_calculator .btn{
+  margin-top: 3rem;
+  padding: 1.2rem 3.5rem;
+}
 
