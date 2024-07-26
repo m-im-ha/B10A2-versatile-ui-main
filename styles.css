@@ -118,7 +118,7 @@ body {
   margin-top: 2rem;
 }
 
-.hero_container .btn_container .btn {
+.btn {
   font-size: var(--h5);
   font-weight: 600;
   padding: 1.5rem 4rem;
@@ -245,7 +245,7 @@ body {
 .box_one_content h3,
 .box_two_content h3,
 .box_three_content h3,
-.box_four_content h3{
+.box_four_content h3 {
   font-size: var(--h4);
 }
 
@@ -257,3 +257,43 @@ body {
   color: rgba(255, 255, 255, 0.5);
   line-height: 1.5rem;
 }
+
+/* section run */
+
+.run {
+  display: flex;
+  gap: 18rem;
+  padding: 6rem;
+  margin: 0 10rem;
+  background-color: rgb(51, 51, 51);
+  border-radius: 1rem;
+  margin-bottom: 5rem;
+}
+
+.run .run_content h2{
+  font-size: var(--h1);
+  margin: 0;
+}
+
+.run .run_content p{
+  font-size: var(--h6);
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 2.2rem;
+  margin-top: 3.5rem;
+}
+
+.run .run_content .btn{
+  margin-top: 4rem;
+  padding: 1.2rem 4.5rem;
+}
+
+.run .run_img{
+  width: 48rem;
+}
+
+.run .run_img img{
+  width: 100%;
+  border-radius: 1rem;
+}
+
+
