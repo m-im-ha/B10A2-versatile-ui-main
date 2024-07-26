@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  /* color */
+
+  /* type scale */
+  --base-size: 1.2rem;
+  --scale: 1.3;
+  --h1: calc(var(--h2) * var(--scale));
+  --h2: calc(var(--h3) * var(--scale));
+  --h3: calc(var(--h4) * var(--scale));
+  --h4: calc(var(--h5) * var(--scale));
+  --h5: calc(var(--h6) * var(--scale));
+  --h6: var(--base-size);
+  --small: calc(var(--base-size) / var(--scale));
+}
+
+@font-face {
+  font-family: Miama;
+  src: url("./font/miama/Miama.ttf");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+  font-size: 62.5%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(34, 34, 34);
+  /* background-image: linear-gradient(to bottom, rgb(17, 17, 17) , rgb(119, 119, 119)); */
+  color: rgb(255, 255, 255);
+  font-family: "Inter", sans-serif;
+}
+
+/* nav */
+.nav {
+  padding: 0 10rem;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.nav h2 {
+  font-size: var(--h2);
+  font-weight: 700;
+  color: rgb(230, 83, 60);
+}
+
+.nav ul {
+  margin: 3rem 1rem;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  border: 1px solid rgba(255, 255, 255,0.1);
+  border-radius: 4rem;
+  /* width: 50%; */
+}
+
+.nav ul li {
+  font-size: var(--h5);
+  cursor: pointer;
+  font-weight: 500;
+  margin: 0;
+}
+
+.nav ul li:first-child {
+  background-color: rgb(230, 83, 60);
+  padding: 0.5rem 2rem;
+  border-radius: 4rem;
+  margin-left: 0.2rem;
+}
+
+.nav ul li:last-child {
+  margin-right: 2rem;
+}
+
+.nav,.hero_container {
+}
+
+/* hero */
+.hero_container {
+  margin: 2rem 0;
+  padding: 0 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* gap: 4rem; */
+  /* padding-bottom: 4rem; */
+}
+
+.hero_container img {
+  margin-bottom: 4rem;
+}
+
+.hero_container .hero_content h1 {
+  font-size: calc(var(--h1) * 1.7);
+  font-weight: 800;
+}
+.hero_container .hero_content h1 span {
+  font-family: Miama;
+  font-weight: normal;
+}
+
+.hero_container .hero_content p {
+  font-size: var(--h5);
+  line-height: 2.5rem;
+  color: rgba(236, 232, 232, 0.5);
+}
+
+.hero_container .btn_container {
+  margin-top: 2rem;
+}
+
+.hero_container .btn_container .btn {
+  font-size: var(--h5);
+  font-weight: 600;
+  padding: 1.5rem 4rem;
+  border: none;
+  border-radius: 2.5rem;
+  color: rgb(236, 232, 232);
+  background-color: rgb(230, 83, 60);
+  cursor: pointer;
+}
+
+.hero_container .btn_container .btn:last-child {
+  background-color: inherit;
+  margin-left: 2rem;
+  border: 1px solid rgb(236, 232, 232);
+}
+
+.hero_container .video_tutorial .video_content {
+  margin-top: -15rem;
+  margin-left: -8rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  background-color: rgba(236, 232, 232, 0.1);
+  width: 50%;
+  padding: 1rem;
+  padding-left: 1rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(5px);
+}
+.hero_container .video_tutorial .video_content .circle {
+  content: "";
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  background-color: rgb(230, 83, 60);
+}
+
+.hero_container .video_tutorials h3,
+.hero_container .free_tutorial h3 {
+  margin: 0;
+  font-size: var(--h3);
+  font-weight: 800;
+}
+.hero_container .video_tutorials p,
+.hero_container .free_tutorial p {
+  margin: 0;
+  font-size: var(--h5);
+  color: rgba(236, 232, 232, 0.5);
+}
+.hero_container .video_tutorial .free_tutorial {
+  margin-top: -35rem;
+  margin-left: 22rem;
+  gap: 2rem;
+  background-color: rgba(236, 232, 232, 0.1);
+  width: 50%;
+  padding: 1rem;
+  padding-left: 1rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(5px);
+}
+
+.hero_container .free_tutorial h3 {
+  font-size: var(--h2);
+}
+
+/* habits */
+.habit {
+  padding: 0 10rem;
+  margin: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.habit .habit_content h2,
+.habit .habit_content p {
+  text-align: center;
+}
+
+.habit .habit_images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+}
+
+.habit .habit_images img {
+  border-radius: 50%;
+  border: 1px solid rgba(236, 232, 232, 0.1);
+}
