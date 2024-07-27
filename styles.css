@@ -51,6 +51,7 @@ body {
   font-size: var(--h2);
   font-weight: 700;
   color: rgb(230, 83, 60);
+  font-style: italic;
 }
 
 .nav ul {
@@ -110,8 +111,9 @@ body {
 
 .hero_container .hero_content p {
   font-size: var(--h5);
+  color: rgba(255, 255, 255, 0.8);
   line-height: 2.5rem;
-  color: rgba(255, 255, 255, 0.5);
+  font-weight: 100;
 }
 
 .hero_container .btn_container {
@@ -167,7 +169,9 @@ body {
 .hero_container .free_tutorial p {
   margin: 0;
   font-size: var(--h5);
-  color: rgba(239, 237, 232, 0.65);
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 2.5rem;
+  font-weight: 100;
 }
 .hero_container .video_tutorial .free_tutorial {
   margin-top: -35rem;
@@ -207,8 +211,9 @@ body {
 
 .habit_content p {
   font-size: var(--h5);
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.8);
   line-height: 2.5rem;
+  font-weight: 100;
   margin-bottom: 4rem;
 }
 
@@ -277,8 +282,9 @@ body {
 
 .run .run_content p {
   font-size: var(--h6);
-  color: rgba(255, 255, 255, 0.6);
-  line-height: 2.2rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 2.5rem;
+  font-weight: 100;
   margin-top: 3.5rem;
 }
 
@@ -312,8 +318,9 @@ body {
 
 .bmi_content p {
   font-size: var(--h5);
-  color: rgba(255, 255, 255, 0.5);
-  line-height: 2rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 2.5rem;
+  font-weight: 100;
 }
 
 /* bmi cal */
@@ -355,9 +362,10 @@ table tbody td {
 }
 
 .check_bmi_content p {
-  font-size: var(--h6);
-  color: rgba(255, 255, 255, 0.5);
-  line-height: 2rem;
+  font-size: var(--h5);
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 2.5rem;
+  font-weight: 100;
 }
 
 .check_bmi_inputs .input_row_one,
@@ -419,8 +427,9 @@ input::placeholder {
 
 .team_content p {
   font-size: var(--h5);
-  color: rgba(255, 255, 255, 0.5);
-  line-height: 2.2rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 2.5rem;
+  font-weight: 100;
 }
 
 .team_images {
@@ -477,3 +486,56 @@ input::placeholder {
   font-size: var(--h6);
   color: rgba(255, 255, 255, 0.8);
 }
+
+/* footer */
+footer {
+  padding: 0 10rem;
+  background-color: rgb(51, 51, 51);
+  padding-top: 4rem;
+}
+
+.footer_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20rem;
+}
+
+.footer_content .left_content h1 {
+  font-size: var(--h1);
+  color: rgb(230, 83, 60);
+  font-style: italic;
+  margin: 0;
+}
+
+.footer_content .left_content p,
+.footer_content .middle_content p,
+.footer_content .right_content p, footer > p {
+  font-size: var(--h5);
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 2.2rem;
+  font-weight: 100;
+}
+
+footer > p{
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  margin: 0;
+}
+
+.footer_content h4 {
+  font-size: var(--h4);
+}
+
+footer hr{
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* .footer_content .middle_content p,
+.footer_content .right_content p{
+  font-size: var(--h5);
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 2.2rem;
+  font-weight: 100;
+} */
