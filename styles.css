@@ -85,6 +85,10 @@ body {
   margin-right: 2rem;
 }
 
+nav span {
+  display: none;
+}
+
 /* hero */
 .hero_container {
   margin: 2rem 0;
@@ -92,7 +96,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  /* gap: 4rem; */
+  /* gap: 30rem; */
   /* padding-bottom: 4rem; */
 }
 
@@ -466,8 +470,6 @@ input::placeholder {
   font-weight: 400;
 }
 
-
-
 .plans_one h3,
 .plans_two h3,
 .plans_three h3 {
@@ -484,7 +486,7 @@ input::placeholder {
   );
 }
 
-.membership .btn{
+.membership .btn {
   margin-bottom: 2rem;
   padding: 1rem 4rem;
   border-radius: 0;
@@ -625,10 +627,53 @@ footer hr {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* .footer_content .middle_content p,
-.footer_content .right_content p{
-  font-size: var(--h5);
-  color: rgba(255, 255, 255, 0.8);
-  line-height: 2.2rem;
-  font-weight: 100;
-} */
+/* 576,992 */
+
+@media screen and (max-width: 576px) {
+  /* body{
+    background-color: blueviolet;
+  } */
+
+  /* nav */
+  .nav {
+    padding: 0 2rem;
+  }
+
+  .nav ul {
+    display: none;
+  }
+
+  /* .nav span{
+    display: block;
+    height: 2rem;
+    width: 2px;
+    margin-top: 4rem;
+  } */
+  
+  nav button {
+    /* background-color: rgb(255, 255, 255); */
+    display: block;
+    font-size: 3rem;
+    line-height: 1;
+    border: 0;
+    background: transparent;
+    color: white;
+  }
+
+  nav button:hover {
+    color: rgb(230, 83, 60);
+    cursor: pointer;
+  }
+
+  nav button::after {
+    content: "\2630";
+  }
+
+  /* .nav span,
+  .nav span ::before,
+  .nav span::after {
+    width: 3rem;
+    height: 2px;
+    display: block;
+  } */
+}
