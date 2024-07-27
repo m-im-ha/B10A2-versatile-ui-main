@@ -306,20 +306,19 @@ body {
   margin-bottom: 5rem;
 }
 
-.bmi_content h2{
+.bmi_content h2 {
   font-size: var(--h1);
 }
 
-.bmi_content p{
+.bmi_content p {
   font-size: var(--h5);
   color: rgba(255, 255, 255, 0.5);
   line-height: 2rem;
 }
 
-
 /* bmi cal */
 
-.bmi_calculator{
+.bmi_calculator {
   padding: 5rem 10rem;
   background-color: rgb(51, 51, 51);
   display: flex;
@@ -329,50 +328,51 @@ body {
   margin-bottom: 5rem;
 }
 
-.bmi_chart table{
+.bmi_chart table {
   border-collapse: collapse;
-  border: 2px solid rgba(255, 255, 255,0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
   font-size: var(--h4);
 }
 
-table caption{
+table caption {
   font-size: var(--h2);
   padding-bottom: 5rem;
 }
 
-table td{
-  border: 2px solid rgba(255, 255, 255,0.1);
+table td {
+  border: 2px solid rgba(255, 255, 255, 0.1);
   padding: 1rem 2rem;
 }
 
-table tbody td{
+table tbody td {
   font-size: var(--h5);
   color: rgba(255, 255, 255, 0.5);
 }
 
-.check_bmi_content h3{
+.check_bmi_content h3 {
   font-size: var(--h2);
   margin: 0;
 }
 
-.check_bmi_content p{
+.check_bmi_content p {
   font-size: var(--h6);
   color: rgba(255, 255, 255, 0.5);
   line-height: 2rem;
 }
 
 .check_bmi_inputs .input_row_one,
-.check_bmi_inputs .input_row_two{
+.check_bmi_inputs .input_row_two {
   display: flex;
   margin-bottom: 1rem;
 }
 
 .input_row_one input:first-child,
-.input_row_two input:first-child{
+.input_row_two input:first-child {
   margin-right: 1rem;
 }
 
-.check_bmi_inputs input,select{
+.check_bmi_inputs input,
+select {
   width: 50%;
   padding: 1.2rem;
   border-radius: 0.5rem;
@@ -382,18 +382,98 @@ table tbody td{
   font-size: var(--h5);
 }
 
-input::placeholder{
+input::placeholder {
   font-size: var(--h5);
   color: rgba(255, 255, 255, 0.6);
 }
 
-.check_bmi_inputs > select{
+.check_bmi_inputs > select {
   width: 100%;
   /* margin-bottom: 4rem; */
 }
 
-.bmi_calculator .btn{
+.bmi_calculator .btn {
   margin-top: 3rem;
   padding: 1.2rem 3.5rem;
 }
 
+/* section team */
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-bottom: 5rem;
+  padding: 0 10rem;
+}
+
+.team_content h1,
+.team_content p {
+  text-align: center;
+}
+
+.team_content h1 {
+  font-size: var(--h1);
+}
+
+.team_content p {
+  font-size: var(--h5);
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 2.2rem;
+}
+
+.team_images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+  background-color: rgb(51, 51, 51);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.team_images .img_one {
+  background-image: url("./images/trainer1.png");
+}
+
+.team_images .img_two {
+  background-image: url("./images/trainer2.png");
+}
+.team_images .img_three {
+  background-image: url("./images/trainer3.png");
+}
+.team_images .img_four {
+  background-image: url("./images/trainer4.png");
+}
+.team_images .img_five {
+  background-image: url("./images/trainer5.png");
+}
+.team_images .img_six {
+  background-image: url("./images/trainer6.png");
+}
+
+.team_images .img_one,
+.team_images .img_two,
+.team_images .img_three,
+.team_images .img_four,
+.team_images .img_five,
+.team_images .img_six {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 20rem 16rem 0 2rem;
+  border-radius: 1rem;
+}
+
+.team_images h4 {
+  font-size: var(--h5);
+  /* width: 100%; */
+}
+
+.team_images p {
+  font-size: var(--h6);
+  color: rgba(255, 255, 255, 0.8);
+}
