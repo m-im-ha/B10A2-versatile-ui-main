@@ -267,12 +267,13 @@ body {
 
 .run {
   display: flex;
-  gap: 18rem;
+  gap: 12rem;
   padding: 6rem;
   margin: 0 10rem;
   background-color: rgb(51, 51, 51);
   border-radius: 1rem;
   margin-bottom: 5rem;
+  box-shadow: 1px 1px 2px rgba(107, 107, 107, 0.2);
 }
 
 .run .run_content h2 {
@@ -281,7 +282,7 @@ body {
 }
 
 .run .run_content p {
-  font-size: var(--h6);
+  font-size: var(--h5);
   color: rgba(255, 255, 255, 0.8);
   line-height: 2.5rem;
   font-weight: 100;
@@ -405,6 +406,97 @@ input::placeholder {
   padding: 1.2rem 3.5rem;
 }
 
+/* section membership */
+.membership {
+  margin: 4rem 10rem;
+}
+
+.membership h1 {
+  font-size: var(--h1);
+  text-align: center;
+}
+
+.membership .membership_plans {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 9rem;
+  text-align: center;
+}
+
+.membership_plans .plans_one,
+.membership_plans .plans_two,
+.membership_plans .plans_three {
+  /* padding: 2rem 6rem; */
+  /* margin: 0 5rem; */
+  background-color: rgb(51, 51, 51);
+}
+
+/* .plans_one h3,
+.plans_two h3,
+.plans_three h3 {
+  background: rgb(198, 89, 64);
+  background: linear-gradient(
+    43deg,
+    rgba(198, 89, 64, 1) 0%,
+    rgba(215, 62, 31, 1) 48%,
+    rgba(235, 122, 15, 1) 96%
+  );
+} */
+
+.plans_one_content,
+.plans_two_content,
+.plans_three_content {
+  padding: 0 8rem;
+}
+
+.plans_one_content p span,
+.plans_two_content p span,
+.plans_three_content p span {
+  font-size: var(--h2);
+  color: rgb(198, 89, 64);
+}
+
+.plans_one_content p,
+.plans_two_content p,
+.plans_three_content p {
+  font-size: var(--h5);
+  color: rgb(255, 255, 255);
+  line-height: 2.5rem;
+  font-weight: 400;
+}
+
+
+
+.plans_one h3,
+.plans_two h3,
+.plans_three h3 {
+  font-size: var(--h3);
+  padding: 1rem 0;
+  margin: 0;
+  margin-bottom: 2rem;
+  background: rgb(198, 89, 64);
+  background: linear-gradient(
+    43deg,
+    rgba(198, 89, 64, 1) 0%,
+    rgba(215, 62, 31, 1) 48%,
+    rgba(235, 122, 15, 1) 96%
+  );
+}
+
+.membership .btn{
+  margin-bottom: 2rem;
+  padding: 1rem 4rem;
+  border-radius: 0;
+  background: rgb(198, 89, 64);
+  background: linear-gradient(
+    43deg,
+    rgba(198, 89, 64, 1) 0%,
+    rgba(215, 62, 31, 1) 48%,
+    rgba(235, 122, 15, 1) 96%
+  );
+}
+
 /* section team */
 .team {
   display: flex;
@@ -510,14 +602,15 @@ footer {
 
 .footer_content .left_content p,
 .footer_content .middle_content p,
-.footer_content .right_content p, footer > p {
+.footer_content .right_content p,
+footer > p {
   font-size: var(--h5);
   color: rgba(255, 255, 255, 0.8);
   line-height: 2.2rem;
   font-weight: 100;
 }
 
-footer > p{
+footer > p {
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 4rem;
@@ -528,7 +621,7 @@ footer > p{
   font-size: var(--h4);
 }
 
-footer hr{
+footer hr {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
